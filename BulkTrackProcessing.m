@@ -21,7 +21,7 @@ load bathymetry_latlon_grid.mat
 
 
 %% Process 
-for n = 1:5%length(TrackDatabase) % loop through all tracks (length(TrackDatabase)) or a specific subset
+for n = 1:length(TrackDatabase) % loop through all tracks (length(TrackDatabase)) or a specific subset
          
         filename = TrackDatabase(n).name; % only use tracks that intersect shore
         disp(filename)
